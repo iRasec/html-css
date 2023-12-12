@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clidren
+
+        */
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred
+        }
+
+        a:hover {
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::before {
+            content: '--> ';
+        }
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(3, 255, 255);
+        }
+
+        .especial {
+            background-color: red;
+        }
+
+        .especial::before {
+            content: '* ';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/luaanceesar/" target="_blank" rel="external">Meu Instagram</a></li>
+        <li><a href="https://www.facebook.com/luan.cesar.52" class="especial">Meu Facebook</a></li>
+        <li><a href="https://github.com/iRasec">Meu Repositorio GitHub</a></li>
+    </ul>
+</body>
+</html>

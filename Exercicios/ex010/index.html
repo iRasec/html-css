@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links exernos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o <a href="https://www.youtube.com/@CursoemVideo" hreflang="pt-br" target="_blank" rel="nofollow">meu canal gratuito no YouTube.</a></p>
+    <h1>Usando links internos</h1>
+    <p>Aqui você pode clicar e ir para a <a href="pag002.html" rel="next">pagina 2</a> do site.</p>
+    <!-- target="_blank" significa que vai abrir uma nova janela para ir até o link clicado. -->
+    <!-- rel="external" indica que é um link externo, pode ser usado também "prev", "next", quando é um link da propria pagina, isso só indica se é a pagina anterior ou a proxima pagina.
+    e quando usa o "nofollow" é quando você não digamos "recomenda" o site para o mecanismo de busca -->
+    <!-- hreflang="pt-br" indica qual idioma da pagina. -->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro em PDF.</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar livro em ZIP.</a></li>
+    </ul>
+</body>
+</html>
